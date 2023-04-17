@@ -1,0 +1,175 @@
+.AboutUs-container {
+    position: relative;
+
+    margin: -55px 0 0;
+    padding: 100px 20px;
+
+    z-index: 5;
+}
+
+.AboutUs-wrapper{
+}
+
+.AboutUs-containerDescription {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.AboutUs-containerTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 266px;
+    width: 100%;
+}
+
+.AboutUs-title {
+    color: var(--mainWhite);
+}
+
+.AboutUs-btnToServices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 66px;
+}
+
+.AboutUs-iconBtnToServices {
+    margin: 0 0 3px 10px;
+
+    width: 25px;
+    height: 25px;
+
+    transform: rotate(180deg);
+}
+
+.AboutUs-containerCards {
+    display: grid;
+    grid-template-areas: 'column1 column2';
+
+    max-width: 1000px;
+    width: 100%;
+
+    margin: 0 0 0 40px;
+
+    gap: 56px 40px;
+}
+
+.AboutUs-containerCard {
+    max-width: 425px;
+    width: 100%;
+    height: 100%;
+}
+
+.AboutUs-cardTitle {
+    min-height: 66px;
+
+    color: var(--mainWhite);
+}
+
+.AboutUs-cardText {
+    margin: 30px 0 0;
+    
+    color: var(--grayText);
+}
+
+@media only screen and (max-width: 1440px) {
+
+    .AboutUs-container {
+        margin: -35px 0 0;
+    }
+
+    .AboutUs-containerTitle {
+        max-width: 244px;
+    }
+    
+    .AboutUs-btnToServices {
+        height: 53px;
+    }
+
+    .AboutUs-containerCards {
+        max-width: 800px;
+        width: 100%;
+    
+        gap: 80px 30px;
+    }
+
+    .AboutUs-containerCard {
+        max-width: 385px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+ 
+    .AboutUs-container{
+        padding: 60px 20px;
+    }
+
+    .AboutUs-containerDescription {
+        display: block;
+    }
+
+    .AboutUs-containerTitle {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+
+        max-width: 100%;
+    }
+
+    .AboutUs-btnToServices {
+        max-width: 244px;
+    }
+
+    .AboutUs-containerCards {
+        grid-template-areas: 'column1';
+
+        margin: 60px 0 0;
+
+        gap: 64px 20px;
+    }
+
+    .AboutUs-containerCard {
+        max-width: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .AboutUs-cardTitle {
+        min-height: auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .AboutUs-container {
+        padding: 32px 20px 40px;
+    }
+
+    .AboutUs-btnToServices {
+        width: 40px;
+        height: 40px;
+    }
+
+    .AboutUs-btnToServicesText {
+        display: none;
+    }
+
+    .AboutUs-iconBtnToServices {
+        margin: 0;
+    }
+
+    .AboutUs-containerCards {
+        gap: 33px 0;
+    }
+
+    .AboutUs-cardText {
+        margin: 24px 0 0;
+    }
+}

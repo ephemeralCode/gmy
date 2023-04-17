@@ -1,0 +1,134 @@
+.ECommerceServices-container {
+}
+
+.ECommerceServices-wrapper {
+    width: 100%;
+
+    background: var(--mainWhite);
+}
+
+.ECommerceServices-containerMainInfo {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 627px;
+    width: 100%;
+}
+
+.ECommerceServices-mainTitle {
+}
+
+.ECommerceServices-mainText {
+
+}
+
+.ECommerceServices-mainText.secondaryText {
+    position: absolute;
+    bottom: 0;
+}
+
+.ECommerceServices-containerInfoCards {
+    margin: 0 0 0 40px;
+}
+
+.ECommerceServices-infoCard {
+    display: flex;
+    align-items: center;
+}
+
+.ECommerceServices-infoCard + .ECommerceServices-infoCard {
+    margin: 75px 0 0;
+}
+
+.ECommerceServices-infoCardNumber {
+    width: 103px;
+
+    font-weight: 400;
+}
+
+.ECommerceServices-infoCardText {
+   max-width: 350px;
+
+   margin: 0 0 0 88px;
+}
+
+/* hover text */
+@media only screen and (min-width: 992px) {
+    
+    .ECommerceServices-containerMainInfo:hover .ECommerceServices-mainText.mainText {
+        opacity: 0;
+
+        transition: all .5s ease-in-out;
+    }
+    
+    .ECommerceServices-containerMainInfo:hover .ECommerceServices-mainText.secondaryText {
+        opacity: 1;
+
+        transition: all .5s ease-in-out .5s;
+    }
+}
+
+/* adaptive */
+@media only screen and (max-width: 1440px) {
+    
+    .ECommerceServices-containerMainInfo {
+        max-width: 470px;
+    }
+
+    .ECommerceServices-infoCard + .ECommerceServices-infoCard {
+        margin: 60px 0 0;
+    }
+
+    .ECommerceServices-infoCardNumber {
+        width: 83px;
+    }
+
+    .ECommerceServices-infoCardText {
+        max-width: 280px;
+     
+        margin: 0 0 0 65px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .ECommerceServices-wrapper {
+        flex-direction: column;
+    }
+
+    .ECommerceServices-containerMainInfo {
+        max-width: none;
+    }
+
+    .ECommerceServices-mainText {
+        margin: 25px 0 0;
+    }
+
+    .ECommerceServices-infoCard + .ECommerceServices-infoCard {
+        margin: 40px 0 0;
+    }
+
+    .ECommerceServices-containerInfoCards {
+        margin: 45px 0 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .ECommerceServices-infoCard + .ECommerceServices-infoCard {
+        margin: 24px 0 0;
+    }
+
+    .ECommerceServices-infoCardNumber {
+        width: 75px;
+    }
+
+    .ECommerceServices-infoCardText {
+        max-width: 168px;
+     
+        margin: 0 0 0 20px;
+    }
+}

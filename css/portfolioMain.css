@@ -1,0 +1,88 @@
+.PortfolioMain-container {
+    display: none;
+
+    padding: 165px 20px 0;
+}
+
+.PortfolioMain-wrapper {
+    text-align: center;
+}
+
+.PortfolioMain-iconMain {
+    max-width: 800px;
+    width: 100%;
+}
+
+.PortfolioMain-containerToggleView {
+    display: flex;
+    
+    max-width: 886px;
+    width: 100%;
+    height: 52px;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 55px;
+}
+
+.PortfolioMain-btnGraphicDesign, .PortfolioMain-btnVideoProduction {
+    font-size: 20px;
+}
+
+.PortfolioMain-btnGraphicDesign {
+    width: 50%;
+
+    border-radius: 55px;
+
+    color: var(--mainWhite);
+}
+
+.PortfolioMain-btnVideoProduction {
+    width: 50%;
+
+    border-radius: 55px;
+
+    color: var(--mainWhite);
+}
+
+.PortfolioMain-btnGraphicDesign.active {
+    background: #FFFFFF;
+
+    color: var(--mainBlack);
+}
+
+.PortfolioMain-btnVideoProduction.active {
+    background: #FFFFFF;
+
+    color: var(--mainBlack);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .PortfolioMain-container{
+        display: block;
+
+        padding: 140px 20px 0;
+    }
+
+    .PortfolioMain-iconMain {
+        max-width: 640px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .PortfolioMain-container{
+        display: block;
+
+        padding: 110px 20px 0;
+    }
+
+    .PortfolioMain-containerToggleView {
+        height: 38px;
+    }
+
+    .PortfolioMain-btnGraphicDesign, .PortfolioMain-btnVideoProduction {
+        font-size: 13px;
+    }
+}

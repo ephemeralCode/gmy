@@ -1,0 +1,190 @@
+.Footer-container {
+    background: var(--mainBlack);
+}
+
+.Footer-wrapper {
+    flex-direction: column;
+
+    padding: 100px 0 0;
+}
+
+.Footer-containerEmeilLink {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.Footer-emeil {
+    display: flex;
+    justify-content: center;
+
+    margin: 8px 0 0;
+}
+
+.Footer-emeil:hover {
+    color: var(--greenText);
+}
+
+.Footer-iconTextEmeil {
+    width: 18px;
+}
+
+.Footer-textEmeil {
+    margin: 0 0 0 20px;
+}
+
+.Footer-emeilText, .Footer-emeil {
+    color: var(--mainWhite);
+}
+
+.Footer-containerBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 60px 0 0;
+}
+
+.Footer-containerLogo {
+    display: flex;
+
+    width: 210px;
+}
+
+.Footer-logoIcon {
+    width: 124px;
+    height: 50px;
+}
+
+.Footer-btnSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 153px;
+    height: 50px;
+}
+
+.Footer-btnBackToUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 53px;
+
+    padding: 0 30px;
+    margin: 0 0 0 20px;
+}
+
+.Footer-iconBtnBackToUp {
+    margin: 0 0 0 10px;
+
+    width: 25px;
+    height: 25px;
+}
+
+.Footer-containerCopyright {
+    margin: 44px 0 0;
+
+    border-top: 1px solid #4F4F4F;
+}
+
+.Footer-copyrightText {
+    margin: 18px 0 30px;
+
+    color: #828282;
+}
+
+@media only screen and (max-width: 1440px) {
+
+    .Footer-emeilText {
+        font-size: 29px;
+    }
+
+    .Footer-containerLogo {
+        width: 182px;
+    }
+
+    .Footer-btnSocial {
+        width: 129px;
+    }
+
+    .Footer-btnBackToUp {
+        padding: 0 18px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .Footer-wrapper {
+        padding: 60px 0 0;
+    }
+
+    .Footer-emeil {
+        font-size: 30px;
+    }
+
+    .Footer-iconTextEmeil {
+        width: 10px;
+    }
+
+    .Footer-copyrightText {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .Footer-wrapper {
+        padding: 32px 0 0;
+    }
+
+    .Footer-emeilText {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .Footer-emeil {
+        font-size: 20px;
+    }
+
+    .Footer-containerBtns {
+        margin: 54px 0 0;
+    }
+
+    .Footer-containerLogo {
+        width: auto;
+    }
+
+    .Footer-logoIcon {
+        width: 83px;
+        height: 40px;
+    }
+
+    .Footer-btnSocial {
+        width: 100px;
+        height: 40px;
+    }
+
+    .Footer-btnBackToUp {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Footer-btnBackToUpText {
+        display: none;
+    }
+
+    .Footer-iconBtnBackToUp {
+        margin: 0;
+    }
+
+    .Footer-containerCopyright {
+        margin: 28px 0 0;
+    }
+
+    .Footer-copyrightText {
+        font-size: 9px;
+    }
+}

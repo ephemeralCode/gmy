@@ -1,0 +1,105 @@
+.Header-container.PortfolioHeader {
+    position: absolute;
+}
+
+.Header-containerBtnBackToMainPage {
+    display: flex;
+
+    width: 220px;
+}
+
+.Header-containerBtnBackToMainPage:hover .Header-iconBtnBackToMainPage {
+    fill: var(--greenText);
+}
+
+.Header-iconBtnBackToMainPage {
+    margin: 5px 0 0;
+
+    width: 14px;
+    height: 10px;
+
+    transform: rotate(90deg);
+}
+
+.Header-textBtnBackToMainPage {
+    margin: 0 0 0 6px;
+
+    color: var(--mainWhite);
+}
+
+.PortfolioHeader-containerToggleView {
+    display: flex;
+    
+    max-width: 700px;
+    width: 100%;
+    height: 100%;
+
+    margin: 0 40px;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 55px;
+}
+
+.PortfolioHeader-btnGraphicDesign {
+    width: 50%;
+
+    border-radius: 55px;
+
+    color: var(--mainWhite);
+}
+
+.PortfolioHeader-btnVideoProduction {
+    width: 50%;
+
+    border-radius: 55px;
+
+    color: var(--mainWhite);
+}
+
+.PortfolioHeader-btnGraphicDesign, .PortfolioHeader-btnVideoProduction {
+    font-size: 20px;
+}
+
+.PortfolioHeader-btnGraphicDesign.active {
+    background: #FFFFFF;
+
+    color: var(--mainBlack);
+}
+
+.PortfolioHeader-btnVideoProduction.active {
+    background: #FFFFFF;
+
+    color: var(--mainBlack);
+}
+
+@media only screen and (max-width: 1440px) {
+
+    .Header-containerBtnBackToMainPage {
+        width: 141px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .PortfolioHeader-btnGraphicDesign, .PortfolioHeader-btnVideoProduction {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .PortfolioHeader-containerToggleView {
+        display: none;
+    }
+
+    .PortfolioHeader-btnGraphicDesign, .PortfolioHeader-btnVideoProduction {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .PortfolioHeader-btnGraphicDesign, .PortfolioHeader-btnVideoProduction {
+        font-size: 10px;
+    }
+}

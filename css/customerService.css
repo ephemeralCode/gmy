@@ -1,0 +1,107 @@
+.CustomerService-container {
+}
+
+.CustomerService-wrapper {
+    height: 594px;
+}
+
+.CustomerService-containerInfo {
+    max-width: 750px;
+
+    background: var(--mainWhite);
+}
+
+.CustomerService-info {
+    position: relative;
+}
+
+.CustomerService-title {
+}
+
+.CustomerService-text {
+    margin: 24px 0 0;
+}
+
+.CustomerService-image {
+    max-width: 780px;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* hover text */
+@media only screen and (min-width: 992px) {
+
+    .CustomerService-wrapperInfo {
+        flex-direction: column;
+        justify-content: end;
+    }
+    
+    .CustomerService-containerInfo:hover .CustomerService-wrapperInfo.mainText {
+        opacity: 0;
+    }
+    
+    .CustomerService-containerInfo:hover .CustomerService-wrapperInfo.secondaryText {
+        opacity: 1;
+    }
+}
+
+/* adaptive */
+@media only screen and (max-width: 1440px) {
+
+    .CustomerService-wrapper {
+        height: 480px;
+    }
+
+    .CustomerService-containerInfo {
+        max-width: 592px;
+    }
+
+    .CustomerService-text {
+        margin: 16px 0 0;
+    }
+
+    .CustomerService-image {
+        max-width: 624px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .CustomerService-wrapper {
+        height: 391px;
+    }
+
+    .CustomerService-containerInfo {
+        max-width: 311px;
+    }
+
+    .CustomerService-text {
+        margin: 20px 0 0;
+    }
+
+    .CustomerService-image {
+        max-width: 420px;
+
+        object-position: -145px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .CustomerService-wrapper {
+        height: 266px;
+    }
+
+    .CustomerService-containerInfo {
+        max-width: 165px;
+    }
+
+    .CustomerService-image {
+        max-width: 345px;
+
+        object-position: -30px;
+    }
+}

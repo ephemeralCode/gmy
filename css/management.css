@@ -1,0 +1,131 @@
+.Management-container {
+}
+
+.Management-wrapper {
+    height: 1188px;
+}
+
+.Management-gridTemplate {
+    display: grid;
+    grid-template-areas: 
+        'photo card1' 
+        'photo card2'
+    ;
+
+    width: 100%;
+}
+
+.Management-image {
+    grid-area: photo;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Management-containerInfo:nth-child(2) {
+    grid-area: card1;
+}
+
+.Management-containerInfo:nth-child(3) {
+    grid-area: card2;
+}
+
+.Management-containerInfo {
+    max-width: 610px;
+    height: 594px;
+
+    background: var(--mainWhite);
+}
+
+.Management-info {
+    position: relative;
+}
+
+.Management-title {
+}
+
+.Management-text {
+    margin: 24px 0 0;
+}
+
+@media only screen and (max-width: 1440px) {
+    
+    .Management-wrapper {
+        height: 960px;
+    }
+
+    .Management-containerInfo {
+        max-width: 490px;
+        height: 480px;
+    }
+
+    .Management-text {
+        margin: 16px 0 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .Management-containerInfo:hover .Management-weapperInfo.mainText {
+        opacity: 0;
+    }
+    
+    .Management-containerInfo:hover .Management-weapperInfo.secondaryText {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .Management-wrapper {
+        height: 606px;
+    }
+
+    .Management-image {
+        max-width: 352px;
+
+        object-position: -55px;
+    }
+
+    .Management-containerInfo {
+        max-width: 377px;
+        height: 303px;
+    }
+
+    .Management-text {
+        margin: 20px 0 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .Management-wrapper {
+        height: auto;
+    }
+
+    .Management-image {
+        max-width: none;
+
+        height: 253px;
+        object-position: center;
+    }
+    
+    .Management-gridTemplate {
+        grid-template-areas: 
+            'card1'
+            'photo' 
+            'card2'
+        ;
+    }
+
+    .Management-containerInfo {
+        max-width: none;
+        width: 100%;
+        height: 135px;
+    }
+
+    .Management-text {
+        margin: 12px 0 0;
+    }
+}

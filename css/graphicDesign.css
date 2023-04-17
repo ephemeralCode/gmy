@@ -1,0 +1,136 @@
+.GraphicDesign-container {
+}
+
+.GraphicDesign-wrapper {
+    height: 626px;
+}
+
+.GraphicDesign-image {
+    max-width: 870px;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.GraphicDesign-containerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 660px;
+
+    background: var(--mainWhite);
+}
+
+.GraphicDesign-info {
+    position: relative;
+}
+
+.GraphicDesign-linkToPortfolioPage {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 220px;
+    width: 100%;
+    height: 62px;
+
+    z-index: 10;
+}
+
+.GraphicDesign-linkToPortfolioPage:hover {
+    background: var(--greenText);
+
+    border: 1px solid var(--greenText);
+}
+
+.GraphicDesign-title {
+}
+
+.GraphicDesign-text {
+    margin: 24px 0 0;
+}
+
+.GraphicDesign-wrapperInfo.secondaryText {
+    position: absolute;
+    bottom: 0;
+}
+
+/* hover text */
+@media only screen and (min-width: 992px) {
+    
+    .GraphicDesign-containerInfo:hover .GraphicDesign-wrapperInfo.mainText {
+        opacity: 0;
+    }
+    
+    .GraphicDesign-containerInfo:hover .GraphicDesign-wrapperInfo.secondaryText {
+        opacity: 1;
+    }
+}
+
+/* adaptive */
+@media only screen and (max-width: 1440px) {
+
+    .GraphicDesign-wrapper {
+        height: 530px;
+    }
+
+    .GraphicDesign-containerInfo {
+        max-width: 530px;
+    }
+
+    .GraphicDesign-text {
+        margin: 16px 0 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .GraphicDesign-wrapper {
+        height: 391px;
+    }
+
+    .GraphicDesign-image {
+        max-width: 420px;
+
+        object-position: -60px;
+    }
+
+    .GraphicDesign-containerInfo {
+        max-width: 311px;
+    }
+
+    .GraphicDesign-linkToPortfolioPage {
+        width: 180px;
+        height: 50px;
+    }
+
+    .GraphicDesign-text {
+        margin: 20px 0 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .GraphicDesign-wrapper {
+        height: 267px;
+    }
+
+    .GraphicDesign-image {
+        max-width: 330px;
+        
+        object-position: -46px;
+    }
+
+    .GraphicDesign-containerInfo {
+        max-width: 186px;
+    }
+
+    .GraphicDesign-linkToPortfolioPage {
+        width: 125px;
+        height: 32px;
+    }
+}

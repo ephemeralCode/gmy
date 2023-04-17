@@ -1,0 +1,56 @@
+.PortfolioVideoProduction-previewVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: 0px 0px;
+
+    z-index: 2;
+}
+
+.VideoProduction-wrapper.PortfolioVideoProduction {
+    height: 804px;
+
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1440px) {
+
+    .VideoProduction-wrapper.PortfolioVideoProduction {
+        height: 664px;
+    }
+
+    .PortfolioVideoProduction-previewVideo {
+        object-position: right center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .VideoProduction-wrapper.PortfolioVideoProduction {
+        height: 457px;
+    }
+
+    .PortfolioVideoProduction-previewVideo {
+        object-position: right center;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .VideoProduction-wrapper.PortfolioVideoProduction {
+        height: 212px;
+    }
+
+    .PortfolioVideoProduction-previewVideo {
+        object-position: right center;
+    }
+
+    .VideoProduction-wrapper.PortfolioVideoProduction .VideoProduction-iconPlay {
+        top: 50%;
+    }
+}

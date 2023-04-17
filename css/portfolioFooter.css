@@ -1,0 +1,55 @@
+.Footer-containerBtns.PortfolioFooter {
+    position: relative;
+}
+
+.PortfolioFooter .Footer-btnSocial {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.portfolioFooter-containerBtnBackToUp {
+    position: fixed;
+    right: 20px;
+    bottom: 119px;
+
+    z-index: 99;
+}
+
+.portfolioFooter-btnBackToUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--mainBlack);
+
+    width: 50px;
+    height: 50px;
+}
+
+.portfolioFooter-btnBackToUpText {
+}
+
+.portfolioFooter-iconBtnBackToUp {
+    width: 35px;
+    height: 35px;
+}
+
+@media only screen and (max-width: 550px) {
+
+    .portfolioFooter-containerBtnBackToUp {
+        bottom: 97px;
+    }
+
+    .portfolioFooter-btnBackToUp {
+        width: 40px;
+        height: 40px;
+    }
+
+    .portfolioFooter-iconBtnBackToUp {
+        width: 30px;
+        height: 30px;
+    }
+}

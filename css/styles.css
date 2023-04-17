@@ -1,0 +1,100 @@
+/* all css */
+@import 'atoms.css';
+@import 'general.css';
+@import 'header.css';
+@import 'main.css';
+@import 'bookkeeping.css';
+@import 'aboutUs.css';
+@import 'medicalBilling.css';
+@import 'management.css';
+@import 'customerService.css';
+@import 'videoProduction.css';
+@import 'graphicDesign.css';
+@import 'eCommerceServices.css';
+@import 'team.css';
+@import 'contacts.css';
+@import 'footer.css';
+
+@import 'videoPresentation.css';
+
+@import 'portfolioMain.css';
+@import 'portfolioGraphicDesign.css';
+@import 'portfolioHeader.css';
+@import 'portfolioPresentation.css';
+@import 'portfolioVideoProduction.css';
+@import 'portfolioFooter.css';
+
+/* fonts */
+@font-face {
+    font-family: 'UrbanistRegular';
+    src: url('../fonts/Urbanist-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UrbanistMedium';
+    src: url('../fonts/Urbanist-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UrbanistSemiBold';
+    src: url('../fonts/Urbanist-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'UrbanistBold';
+    src: url('../fonts/Urbanist-Bold.ttf') format('truetype');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* created by Nova, git: ephemeralCode */

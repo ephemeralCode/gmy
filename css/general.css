@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 98px;
+}
+
+body {
+    font-family: 'UrbanistRegular';
+
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+    
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+
+    html {
+        scroll-padding-top: 72px;
+    }
+}
