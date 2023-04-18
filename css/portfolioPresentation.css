@@ -14,16 +14,15 @@
 
 .portfolioPresentation-grid {
     display: grid;
-    grid-template-rows: auto 185px auto 141px auto 120px; 
-    grid-template-areas: 
-        'portfolio1 portfolio2'
-        'portfolio1 portfolio4'
+    grid-template-rows: auto 31px auto 141px auto 120px;
+    grid-template-areas:
+        'portfolio3 portfolio2'
         'portfolio3 portfolio4'
-        'portfolio3 portfolio6'
+        'portfolio1 portfolio4'
+        'portfolio1 portfolio6'
         'portfolio5 portfolio6'
         'portfolio5 portfolio8'
-        'portfolio7 portfolio8'
-    ;
+        'portfolio7 portfolio8';
 }
 
 .portfolioPresentation-image {
@@ -154,7 +153,7 @@
     }
     
     .portfolioPresentation-containerImage:nth-child(6) {
-        height: 108px;
+        height: 208px;
     }
     
     .portfolioPresentation-containerImage:nth-child(7) {

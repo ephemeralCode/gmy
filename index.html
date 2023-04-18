@@ -5,20 +5,27 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>GMY-layout</title>
+        <title>GMY Consulting</title>
 
         <!-- <link rel="icon" type="image/x-icon" href="./assets/logo.ico"> -->
         <link rel="stylesheet" href="./css/styles.css">
+
         <script defer src="./js/script.js"></script>
         <script defer src="./js/player.js"></script>
         <script defer src="./js/animatrionTextScroll.js"></script>
+
+        <!-- email lib -->
+        <script defer src="./js/sendMail.js"></script>
+        <script defer src="https://smtpjs.com/v3/smtp.js"></script>
     </head>
 
     <body>
         <header class="Header-container whiteTheme borderRadiusDown mobilePadding">
             <div class="Header-wrapper maxContainerSize">
-                <img class="Header-logoIcon" src="./assets/icons/logoBlack.svg" alt="logo" />
-
+                <a href="#main">
+                    <img class="Header-logoIcon" src="./assets/icons/logoBlack.svg" alt="logo" />
+                </a>
+                
                 <div class="Header-containerLinks">
                     <a class="Header-link textLink" href="#aboutUs">About</a>
                     <button class="Header-link Header-menuDesctop textLink">
@@ -177,7 +184,7 @@
 
                 <div class="Main-containerImageBackground">
                     <figure>
-                        <img class="Main-imageBackground" src="./assets/images/mainBG.png" alt="main background" />
+                        <img class="Main-imageBackground" src="./assets/images/mainBG.webp" alt="main background" />
                     </figure>
                 </div>
             </div>
@@ -371,10 +378,7 @@
         </section>
 
         <section class="VideoProduction-container blackTheme mobilePadding" id="videoProduction">
-            <!-- <div class="VideoProduction-wrapper maxContainerSize borderRadiusFull"> -->
             <div class="VideoProduction-wrapper maxContainerSize borderRadiusFull innerPadding ">
-                <!-- <img class="VideoProduction-iconPlay" src="./assets/icons/iconPlayVideo.svg" /> -->
-
                 <div class="VideoProduction-containerInfo containerInfo">
                     <a class="GraphicDesign-linkToPortfolioPage primary textUppercase textBtn" href="./portfolio-video.html">see our work</a>
 
@@ -397,10 +401,8 @@
                     </div>
                 </div>
                 
-                <!-- <a class="GraphicDesign-linkToPortfolioPage primary textUppercase textBtn" href="./portfolio.html">see our work</a> -->
                 <div class="VideoProduction-previewVideo"></div>
                 <div class="VideoProduction-dimming"></div>
-                <!-- <iframe id="player" class="VideoProduction-video" src="https://www.youtube.com/embed/5_SGxF4RLgc?enablejsapi=1&controls=0&iv_load_policy=3&modestbranding=1&hl=en&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
             </div>
         </section>
 
@@ -515,7 +517,7 @@
                     <div class="Team-containerInfoPerson">
                         <h2 class="Team-infoPersonName h2 textUppercase">Jacob Kay</h2>
                     
-                        <p class="Team-infoPersonProfession textSmall">CEO</p>
+                        <p class="Team-infoPersonProfession textSmall">Founder & CEO</p>
                     </div>
                 </div>
 
