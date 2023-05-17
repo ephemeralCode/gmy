@@ -1,3 +1,18 @@
+/* footer::after {
+    position: fixed;
+    content: "";
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 1440px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+} */
+
 .Footer-container {
     background: var(--mainBlack);
 }

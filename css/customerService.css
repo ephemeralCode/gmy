@@ -85,7 +85,7 @@
     .CustomerService-image {
         max-width: 420px;
 
-        object-position: -145px;
+        object-position: right;
     }
 }
 
@@ -102,6 +102,6 @@
     .CustomerService-image {
         max-width: 345px;
 
-        object-position: -30px;
+        object-position: right;
     }
 }

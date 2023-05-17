@@ -1,23 +1,32 @@
-// const contactsBtnSendEmeil = document.querySelector('.Contacts-btnSendEmeil')
+const contactsBtnSendEmeil = document.querySelector('.Contacts-btnSendEmeil')
 
-// function emeilTest() {
-//     let userEmail = document.querySelector('.Contacts-input').value
-    
-//     Email.send({
-//         SecureToken : "d6ad7707-3972-43dc-90aa-4cab0fb56796",
+function emeilTest() {
+    let inputEmail = document.querySelector('.Contacts-input')
+    let userEmail = document.querySelector('.Contacts-input').value
 
-//         To : '',
-//         From : userEmail,
-//         Subject : "ДЕЛОВОЕ ПРЕДЛОЖЕНИЕ",
-//         Body : `Эта почта хочет связаться с вами ${userEmail}`
-//     })
-//     .then(
-//         (message) => {
-//             message === 'OK' ? alert('Succsess') : message => alert(message)
-//         }
-//     )
+    Email.send({
+        SecureToken : "d6ad7707-3972-43dc-90aa-4cab0fb56796",
 
-//     userEmail.value = ''
-// }
+        To : 'INFO@GMYCONSULTING.COM, JACOB@GMYCONSULTING.COM',
+        From : userEmail,
+        Subject : "GMY Website Notification",
+        Body : `
+            This person wants you to contact them.
+            <br><br>
+            E-Mail: ${userEmail}
+        `
+    })
+    .then(
+        (message) => {
+            if (message === 'OK') {
+                inputEmail.value = ''
 
-// contactsBtnSendEmeil.addEventListener('click', emeilTest)
+                alert('Succsess')
+            } else {
+                alert(message)
+            }
+        }
+    )
+}
+
+contactsBtnSendEmeil.addEventListener('click', emeilTest)
