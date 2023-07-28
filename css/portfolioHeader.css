@@ -1,27 +1,38 @@
-.Header-container.PortfolioHeader {
-    position: absolute;
+.PortfolioHeader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 98px;
 }
 
-.Header-containerBtnBackToMainPage {
+.PortfolioHeader-wrapper {
+    position: relative;
+
+    align-items: center;
+}
+
+.PortfolioHeader-containerBtnBackToMainPage {
     display: flex;
 
     width: 220px;
 }
 
-.Header-containerBtnBackToMainPage:hover .Header-iconBtnBackToMainPage {
-    fill: var(--greenText);
+.PortfolioHeader-iconBtnBackToMainPage {
+    width: 12px;
+    height: 12px;
+
+    margin: 4px 0 0;
+
+    fill: var(--mainWhite);
 }
 
-.Header-iconBtnBackToMainPage {
-    margin: 5px 0 0;
-
-    width: 14px;
-    height: 10px;
-
-    transform: rotate(90deg);
+.PortfolioHeader-containerBtnBackToMainPage:hover .PortfolioHeader-iconBtnBackToMainPage {
+    fill: var(--mainGreen);
 }
 
-.Header-textBtnBackToMainPage {
+.PortfolioHeader-textBtnBackToMainPage {
     margin: 0 0 0 6px;
 
     color: var(--mainWhite);
@@ -29,18 +40,19 @@
 
 .PortfolioHeader-containerToggleView {
     display: flex;
-    
+
     max-width: 700px;
     width: 100%;
-    height: 100%;
+    height: 100%; 
 
-    margin: 0 40px;
+    padding: 5px;
+    margin: 0 20px;
 
-    border: 1px solid #FFFFFF;
+    border: 1px solid white;
     border-radius: 55px;
 }
 
-.PortfolioHeader-btnGraphicDesign {
+/* .PortfolioHeader-btnGraphicDesign {
     width: 50%;
 
     border-radius: 55px;
@@ -70,6 +82,20 @@
     background: #FFFFFF;
 
     color: var(--mainBlack);
+} */
+
+.PortfolioHeader-mainBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 220px;
+    min-width: 110px;
+    height: 52px;
+}
+
+.PortfolioHeader-mainBtn:hover {
+
 }
 
 @media only screen and (max-width: 1440px) {
@@ -81,9 +107,9 @@
 
 @media only screen and (max-width: 992px) {
 
-    .PortfolioHeader-btnGraphicDesign, .PortfolioHeader-btnVideoProduction {
+    /* .PortfolioHeader-btnGraphicDesign, .PortfolioHeader-btnVideoProduction {
         font-size: 16px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 768px) {
@@ -92,14 +118,23 @@
         display: none;
     }
 
-    .PortfolioHeader-btnGraphicDesign, .PortfolioHeader-btnVideoProduction {
+    /* .PortfolioHeader-btnGraphicDesign, .PortfolioHeader-btnVideoProduction {
         font-size: 12px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 550px) {
 
-    .PortfolioHeader-btnGraphicDesign, .PortfolioHeader-btnVideoProduction {
+    .PortfolioHeader-container {
+        height: 72px;
+    }
+
+    /* .PortfolioHeader-btnGraphicDesign, .PortfolioHeader-btnVideoProduction {
         font-size: 10px;
+    } */
+    
+    .PortfolioHeader-mainBtn {
+        width: 170px;
+        height: 40px;
     }
 }

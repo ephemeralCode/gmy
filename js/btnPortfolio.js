@@ -1,50 +1,34 @@
-// desctop
-const portfolioHeaderBtnGraphicDesign = document.querySelector('.PortfolioHeader-btnGraphicDesign')
-const portfolioHeaderBtnVideoProduction = document.querySelector('.PortfolioHeader-btnVideoProduction')
+const selectedTypePorftolio = localStorage.getItem('typePortfolio')
 
-// mobile
-const portfolioMainBtnGraphicDesign = document.querySelector('.PortfolioMain-btnGraphicDesign')
-const portfolioMainBtnVideoProduction = document.querySelector('.PortfolioMain-btnVideoProduction')
+// container
+const portfolioGraphicDesignContainer = document.querySelector('.PortfolioGraphicDesign-container')
+const portfolioVideoProductionContainer = document.querySelector('.PortfolioVideoProduction-container')
 
-const portfolioGraphicDesignContainer = document.querySelector('.PortfolioGraphicDesign')
-const portfolioVideoProductionContainer = document.querySelector('.PortfolioVideoProduction')
+const btnTypeGraphicDesignPortfolio = document.querySelectorAll('.PortfolioHeader-containerBtnTypeGraphicDesignPortfolio')
+const btnTypeVideoProductionPortfolio = document.querySelectorAll('.PortfolioHeader-containerBtnTypeVideoProductionPortfolio')
+const arrayBtnGraphicDesign = [...btnTypeGraphicDesignPortfolio]
+const arrayBtnVideoProduction = [...btnTypeVideoProductionPortfolio]
 
-// desctop
 function graphicDesign() {
-    portfolioHeaderBtnGraphicDesign.classList.add('active')
-    portfolioHeaderBtnVideoProduction.classList.remove('active')
+    arrayBtnGraphicDesign.map(item => item.classList.add('active'))
+    arrayBtnVideoProduction.map(item => item.classList.remove('active'))
 
-    portfolioMainBtnGraphicDesign.classList.add('active')
-    portfolioMainBtnVideoProduction.classList.remove('active')
-    
     portfolioGraphicDesignContainer.classList.remove('hidden')
     portfolioVideoProductionContainer.classList.add('hidden')
 }
 
 function videoProduction() {
-    portfolioHeaderBtnVideoProduction.classList.add('active')
-    portfolioHeaderBtnGraphicDesign.classList.remove('active')
-
-    portfolioMainBtnGraphicDesign.classList.remove('active')
-    portfolioMainBtnVideoProduction.classList.add('active')
+    arrayBtnGraphicDesign.map(item => item.classList.remove('active'))
+    arrayBtnVideoProduction.map(item => item.classList.add('active'))
 
     portfolioVideoProductionContainer.classList.remove('hidden')
     portfolioGraphicDesignContainer.classList.add('hidden')
 }
 
-portfolioHeaderBtnGraphicDesign.addEventListener('click', () => {
-    graphicDesign()
-})
-
-portfolioHeaderBtnVideoProduction.addEventListener('click', () => {
+if (selectedTypePorftolio === 'video') {
+    
     videoProduction()
-})
+} 
 
-// mobile
-portfolioMainBtnGraphicDesign.addEventListener('click', () => {
-    graphicDesign()
-})
-
-portfolioMainBtnVideoProduction.addEventListener('click', () => {
-    videoProduction()
-})
+arrayBtnGraphicDesign.map(item => item.addEventListener('click', graphicDesign))
+arrayBtnVideoProduction.map(item => item.addEventListener('click', videoProduction))

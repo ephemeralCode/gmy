@@ -2,20 +2,20 @@
     --mainBlack: #1B1B1B;
     --mainWhite: #FFF;
     --secondaryWhite: #ECECEC;
+    --mainGreen: #00C3A7;
 
     --grayText: #828282;
-    --greenText: #00C3A7;
 
     /* max size content */
-    --maxDesctopContainerSize: 1520px;
-    --maxNotebookContainerSize: 1216px;
+    --maxDesktopContainerSize: 1520px;
+    --maxLaptopContainerSize: 1216px;
     --maxTabletContainerSize: 688px;
     --maxMobileContainerSize: 320px;
 
     /* breakpoints */
     /*  
     --Desctop: 1920px;
-    --Notebook: 1440px;
+    --Laptop: 1440px;
     --Tablet: 768px;
     --Mobile: 550px; 
     */
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-between;
 
-    max-width: var(--maxDesctopContainerSize);
+    max-width: var(--maxDesktopContainerSize);
     width: 100%;
 
     margin: 0 auto;
@@ -72,32 +72,156 @@
 
 /* btns */
 
-.primary {
+.primaryBtn {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--mainBlack);
+
     background: var(--mainBlack);
     border-radius: 50px;
 
+    overflow: hidden;
+}
+
+.primaryBtnText {
+    z-index: 5;
+}
+
+.primaryBtn:not(:hover) .primaryBtnText {
     color: var(--mainWhite);
+
+    transition: all .25s ease-in-out;
 }
 
-.primary:hover {
-    background: none;
-    border: 1px solid var(--mainBlack);
-
+.primaryBtn:hover .primaryBtnText {
     color: var(--mainBlack);
+
+    transition: all .5s ease-in-out;
 }
 
-.secondary {
+/* white hover */
+.primaryBtn.whiteHover::before {
+    content: '';
+
+    position: absolute;
+    right: 0;
+
+    width: 0%;
+    height: 100%;
+
+    background: var(--secondaryWhite);
+
+    transition: all .25s ease-in-out;
+}
+
+/* green hover */
+.primaryBtn.greenHover::before {
+    content: '';
+
+    position: absolute;
+    right: 0;
+
+    width: 0%;
+    height: 100%;
+
+    background: var(--mainGreen);
+
+    transition: all .25s ease-in-out;
+}
+
+.primaryBtn:hover:before {
+    width: 100%;
+}
+
+.linkToPortfolioPage {
+    width: 100%;
+    height: 62px;
+
+    z-index: 10;
+}
+
+.primaryBtn.linkToPortfolioPage {
+    border: none;
+}
+
+
+
+.secondaryBtn {
+    position: relative;
+
     background: none;
     border: 1px solid var(--mainWhite);
     border-radius: 50px;
 
-    color: var(--mainWhite);
+    overflow: hidden;
 }
 
-.secondary:hover {
+.secondaryBtnText {
+    z-index: 5;
+}
+
+.secondaryBtn:not(:hover) .secondaryBtnText {
+    color: var(--mainWhite);
+
+    transition: all .15s ease-in-out;
+}
+
+.secondaryBtn:hover .secondaryBtnText {
+    color: var(--mainBlack);
+
+    transition: all .5s ease-in-out;
+}
+
+.secondaryBtn::before {
+    content: '';
+
+    position: absolute;
+    right: 0;
+
+    width: 0%;
+    height: 100%;
+
     background: var(--mainWhite);
 
-    color: var(--mainBlack);
+    transition: all .25s ease-in-out;
+}
+
+.secondaryBtn:hover:before {
+    width: 100%;
+}
+
+/* hover icon */
+
+.clickIconAnim {
+    animation: iconAnimFrame .25s ease-in-out;
+}
+
+.containerHoverIconAnim:hover .hoverIconAnim {
+    animation: iconAnimFrame .25s ease-in-out;
+}
+
+.containerHoverIconAnim:hover .hoverGreenIconAnim {
+    fill: var(--mainGreen);
+
+    animation: iconAnimFrame .25s ease-in-out;
+}
+
+@keyframes iconAnimFrame {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+  
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 /* fonts */
@@ -162,13 +286,13 @@
 
 /* animation */
 
-.upAnimationText {
+.upAnimText {
     transform: translateY(60%);
     opacity: 0;
     transition: all 1s ease-in-out;
 }
 
-.downAnimationText {
+.downAnimText {
     transform: translateY(-170%);
 
     transition: all 1s ease-in-out;
@@ -177,6 +301,12 @@
 .active {
     transform: translateY(0);
     opacity: 1;
+}
+
+/* toggle */
+
+.hidden {
+    display: none;
 }
 
 /**/
@@ -209,7 +339,7 @@
 @media only screen and (max-width: 1440px) {
 
     .maxContainerSize {
-        max-width: var(--maxNotebookContainerSize);
+        max-width: var(--maxLaptopContainerSize);
     }
 
     .borderRadiusUp {

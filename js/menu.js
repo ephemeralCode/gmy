@@ -1,26 +1,26 @@
-const headerMenuDesctop = document.querySelector('.Header-menuDesctop')
-const headerIconMenuDesctop = document.querySelector('.Header-iconMenuDesctop')
-const headerContainerMenu = document.querySelector('.Header-containerMenu')
-const headerMenuLinks = document.querySelectorAll('.Header-menuLink')
+const headerMenuDesktop = document.querySelector('.Header-menuDesktop')
+const headerIconMenuDesktop = document.querySelector('.Header-iconMenuDesktop')
+const headerContainerMenu = document.querySelector('.HeaderMenu-container')
+const headerMenuLinks = document.querySelectorAll('.HeaderMenu-link')
 const arrayMenuLinks = [...headerMenuLinks]
 
-// desctop
-headerMenuDesctop.addEventListener('click', () => {
-    headerContainerMenu.classList.toggle('hidden')
-    headerIconMenuDesctop.classList.toggle('active')
+// desktop
+headerMenuDesktop.addEventListener('click', () => {
+    headerContainerMenu.classList.toggle('active')
+    headerIconMenuDesktop.classList.toggle('active')
 })
 
 arrayMenuLinks.map(item => item.addEventListener('click', () => {
-    headerContainerMenu.classList.add('hidden')
+    headerContainerMenu.classList.toggle('active')
 }))
 
 // mobile
 const headerBurgerBtn = document.querySelector('.Header-burgerBtn')
-const headerContainerBurgerMenu = document.querySelector('.Header-containerBurgerMenu')
-const headerBurgerBtnClose = document.querySelector('.Header-burgerBtnClose')
-const headerBurgerLink = document.querySelectorAll('.Header-burgerLink')
+const headerContainerBurgerMenu = document.querySelector('.HeaderBurgerMenu-container')
+const headerBurgerBtnClose = document.querySelector('.HeaderBurgerMenu-btnClose')
+const headerBurgerLink = document.querySelectorAll('.HeaderBurgerMenu-link')
 const arrayBurgerLinks = [...headerBurgerLink]
-const headerBurgerSelectLink = document.querySelectorAll('.Header-burgerSelectLink')
+const headerBurgerSelectLink = document.querySelectorAll('.HeaderBurgerMenu-selectLink')
 const arrayBurgerLinksSelect = [...headerBurgerSelectLink]
 // scroll
 const mainScroll = document.querySelector('body')
@@ -48,8 +48,8 @@ arrayBurgerLinksSelect.map(item => item.addEventListener('click', () => {
 
 // select links
 const headerMenuMobile = document.querySelector('.Header-menuMobile')
-const headerIconBurgerSelect = document.querySelector('.Header-iconBurgerSelect')
-const headerWrapperBurgerMenuLinksSelect = document.querySelector('.Header-wrapperBurgerMenuLinksSelect')
+const headerIconBurgerSelect = document.querySelector('.HeaderBurgerMenu-iconSelect')
+const headerWrapperBurgerMenuLinksSelect = document.querySelector('.HeaderBurgerMenu-wrapperLinksSelect')
 
 headerMenuMobile.addEventListener('click', () => {
     headerWrapperBurgerMenuLinksSelect.classList.toggle('hidden')

@@ -1,0 +1,20 @@
+/* general */
+@import 'atoms.css';
+@import 'general.css';
+
+/* components */
+@import 'videoPresentation.css';
+@import 'portfolioMain.css';
+@import 'portfolioTypeSwitch.css';
+@import 'portfolioGraphicDesign.css';
+@import 'portfolioHeader.css';
+@import 'portfolioPresentation.css';
+@import 'portfolioVideoProduction.css';
+@import 'portfolioInfoTable.css';
+@import 'portfolioFooter.css';
+
+@import 'contacts.css';
+@import 'footer.css';
+
+/* fonts */
+@import 'fonts.css';

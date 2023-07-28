@@ -1,0 +1,107 @@
+.PortfolioInfoTable-container {
+    position: relative;
+
+    padding: 100px 0;
+
+    z-index: 10;
+}
+
+.PortfolioInfoTable-wrapper {
+    min-height: 725px;
+}
+
+.PortfolioInfoTable-containerDescription {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.PortfolioInfoTable-containerMainInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 650px;
+    width: 100%;
+}
+
+.PortfolioInfoTable-mainTitle {
+    color: var(--mainWhite);
+}
+
+.PortfolioInfoTable-mainText {
+    color: var(--grayText);
+}
+
+.PortfolioInfoTable-containerInfoCards {
+    max-width: 615px;
+    width: 100%;
+
+    margin: 0 0 0 40px;
+}
+
+.PortfolioInfoTable-infoCard + .PortfolioInfoTable-infoCard {
+    margin: 60px 0 0;
+} 
+
+.PortfolioInfoTable-infoCard {
+    display: flex;
+
+    color: var(--mainWhite);
+}
+
+.PortfolioInfoTable-infoCardNumber {
+    min-width: 104px;
+
+    margin: 0 40px 0 0;
+}
+
+.PortfolioInfoTable-infoCardText {
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .PortfolioInfoTable-container {
+        padding: 64px 0;
+    }
+
+    .PortfolioInfoTable-wrapper {
+        display: block;
+        
+        height: auto;
+    }
+
+    .PortfolioInfoTable-mainText {
+        margin: 90px 0 0;
+    }
+
+    .PortfolioInfoTable-containerInfoCards {
+        margin: 70px 0 0;
+    }
+
+    .PortfolioInfoTable-infoCardNumber {
+        font-size: 75px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .PortfolioInfoTable-container {
+        padding: 40px 0;
+    }
+
+    .PortfolioInfoTable-mainTitle {
+        font-size: 42px;
+    }
+
+    .PortfolioInfoTable-mainText {
+        margin: 30px 0 0;
+
+        font-size: 17px;
+    }
+
+    .PortfolioInfoTable-infoCardText {
+        font-size: 18px;
+    }
+}

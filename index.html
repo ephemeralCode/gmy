@@ -7,12 +7,12 @@
 
         <title>GMY Consulting</title>
 
-        <!-- <link rel="icon" type="image/x-icon" href="./assets/logo.ico"> -->
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="icon" type="image/x-icon" href="./assets/logo.ico">
+        <link rel="stylesheet" href="./css/stylesIndexPage.css">
 
-        <script defer src="./js/script.js"></script>
-        <script defer src="./js/player.js"></script>
+        <script defer src="./js/menu.js"></script>
         <script defer src="./js/animatrionTextScroll.js"></script>
+        <script defer src="./js/selectedTypePorftolio.js"></script>
 
         <!-- email lib -->
         <script defer src="./js/sendMail.js"></script>
@@ -20,6 +20,171 @@
     </head>
 
     <body>
+        <div class="Curtain-container">
+            <img class="Curtain-logo" src="./assets/icons/iconLogoCurtain.svg" alt="">
+        </div>
+
+        <div class="HeaderMenu-container blackTheme borderRadiusDown">
+            <div class="HeaderMenu-containerLinks">
+                <a class="HeaderMenu-link textSmall" href="#bookkeeping">
+                    <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                    </svg>
+                
+                    <p>Bookkeeping</p>
+                </a>
+
+                <a class="HeaderMenu-link textSmall" href="#medicalBilling">
+                    <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                    </svg>
+                
+                    <p>Medical Billing</p>
+                </a>
+
+                <a class="HeaderMenu-link textSmall" href="#management">
+                    <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                    </svg>
+                
+                    <p>AR Management</p>
+                </a>
+
+                <a class="HeaderMenu-link textSmall" href="#management">
+                    <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                    </svg>
+                
+                    <p>AP Management</p>
+                </a>
+
+                <a class="HeaderMenu-link textSmall" href="#videoProduction">
+                    <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                    </svg>
+                
+                    <p>Video Production</p>
+                </a>
+
+                <a class="HeaderMenu-link textSmall" href="#graphicDesign">
+                    <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                    </svg>
+                
+                    <p>Graphic Design</p>
+                </a>
+
+                <a class="HeaderMenu-link textSmall" href="#customerService">
+                    <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                    </svg>
+                
+                    <p>Customer Service</p>
+                </a>
+
+                <a class="HeaderMenu-link textSmall" href="#eCommerceServices">
+                    <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                    </svg>
+                
+                    <p>E-commerce Services</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="HeaderBurgerMenu-container hidden">
+            <div class="HeaderBurgerMenu-containerHeader">
+                <img class="HeaderBurgerMenu-iconLogo" src="./assets/icons/logoWhite.svg" alt="">
+
+                <button class="HeaderBurgerMenu-btnClose">
+                    <img class="HeaderBurgerMenu-iconBtnClose" src="./assets/icons/iconClose.svg" alt="">
+                </button>
+            </div>
+            
+            <div class="HeaderBurgerMenu-containerLinks">
+                <a class="HeaderBurgerMenu-link textLink" href="#aboutUs">About</a>
+
+                <div class="HeaderBurgerMenu-containerLinksSelect">
+                    <button class="HeaderBurgerMenu-select Header-menuMobile textLink">
+                        <p>Services</p>
+
+                        <svg class="HeaderBurgerMenu-iconSelect" viewBox="0 0 57 33" fill="current" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28.7158 32.5572L0.43155 4.27295L4.19539 0.509107L28.7158 25.0295L53.2362 0.509107L57.0001 4.27295L28.7158 32.5572Z" />
+                        </svg>                        
+                    </button>
+
+                    <div class="HeaderBurgerMenu-wrapperLinksSelect hidden">
+                        <a class="HeaderBurgerMenu-selectLink" href="#bookkeeping">
+                            <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                            </svg>
+                        
+                            <p>Bookkeeping</p>
+                        </a>
+
+                        <a class="HeaderBurgerMenu-selectLink" href="#medicalBilling">
+                            <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                            </svg>
+                        
+                            <p>Medical Billing</p>
+                        </a>
+    
+                        <a class="HeaderBurgerMenu-selectLink" href="#management">
+                            <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                            </svg>
+                        
+                            <p>AR Management</p>
+                        </a>
+    
+                        <a class="HeaderBurgerMenu-selectLink" href="#management">
+                            <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                            </svg>
+                        
+                            <p>AP Management</p>
+                        </a>
+    
+                        <a class="HeaderBurgerMenu-selectLink" href="#videoProduction">
+                            <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                            </svg>
+                        
+                            <p>Video Production</p>
+                        </a>
+    
+                        <a class="HeaderBurgerMenu-selectLink" href="#graphicDesign">
+                            <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                            </svg>
+                        
+                            <p>Graphic Design</p>
+                        </a>
+    
+                        <a class="HeaderBurgerMenu-selectLink" href="#customerService">
+                            <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                            </svg>
+                        
+                            <p>Customer Service</p>
+                        </a>
+    
+                        <a class="HeaderBurgerMenu-selectLink" href="#eCommerceServices">
+                            <svg class="iconArrowText" viewBox="0 0 33 58" fill="current" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                            </svg>
+                        
+                            <p>E-commerce Services</p>
+                        </a>
+                    </div>
+                </div>
+            
+                <a class="HeaderBurgerMenu-link textLink" href="#team">Team</a>
+                <a class="HeaderBurgerMenu-link textLink" href="#contacts">Contacts</a>
+            </div>
+        </div>
+
         <header class="Header-container whiteTheme borderRadiusDown mobilePadding">
             <div class="Header-wrapper maxContainerSize">
                 <a href="#main">
@@ -28,144 +193,21 @@
                 
                 <div class="Header-containerLinks">
                     <a class="Header-link textLink" href="#aboutUs">About</a>
-                    <button class="Header-link Header-menuDesctop textLink">
+                    <button class="Header-link Header-menuDesktop textLink">
                         <p>Services</p>
 
-                        <img class="Header-iconMenuDesctop" src="./assets/icons/iconArrowBlackSelect.svg" alt="">
+                        <svg class="Header-iconMenuDesktop" viewBox="0 0 57 33" fill="current" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28.7158 32.5572L0.43155 4.27295L4.19539 0.509107L28.7158 25.0295L53.2362 0.509107L57.0001 4.27295L28.7158 32.5572Z" />
+                        </svg>
                     </button>
                     <a class="Header-link textLink" href="#team">Team</a>
                     <a class="Header-link textLink" href="#contacts">Contacts</a>
                 </div>
 
-                <div class="Header-containerMenu blackTheme borderRadiusDown hidden">
-                    <div class="Header-containerMenuLinks">
-                        <a class="Header-menuLink textSmall" href="#bookkeeping">
-                            <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                        
-                            <p>Bookkeeping</p>
-                        </a>
-
-                        <a class="Header-menuLink textSmall" href="#medicalBilling">
-                            <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                        
-                            <p>Medical Billing</p>
-                        </a>
-    
-                        <a class="Header-menuLink textSmall" href="#management">
-                            <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                        
-                            <p>AR Management</p>
-                        </a>
-    
-                        <a class="Header-menuLink textSmall" href="#management">
-                            <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                        
-                            <p>AP Management</p>
-                        </a>
-    
-                        <a class="Header-menuLink textSmall" href="#videoProduction">
-                            <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                        
-                            <p>Video Production</p>
-                        </a>
-    
-                        <a class="Header-menuLink textSmall" href="#graphicDesign">
-                            <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                        
-                            <p>Graphic Design</p>
-                        </a>
-    
-                        <a class="Header-menuLink textSmall" href="#customerService">
-                            <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                        
-                            <p>Customer Service</p>
-                        </a>
-    
-                        <a class="Header-menuLink textSmall" href="#eCommerceServices">
-                            <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                        
-                            <p>E-commerce Services</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="Header-containerBurgerMenu hidden">
-                    <div class="Header-containerBurgerHeader">
-                        <img class="Header-iconBurgerLogo" src="./assets/icons/logoWhite.svg" alt="">
-
-                        <button class="Header-burgerBtnClose">
-                            <img class="Header-iconBurgerBtnClose" src="./assets/icons/iconClose.svg" alt="">
-                        </button>
-                    </div>
-                    
-                    <div class="Header-containerBurgerMenuLinks">
-                        <a class="Header-burgerLink textLink" href="#aboutUs">About</a>
-
-                        <div class="Header-containerBurgerMenuLinksSelect">
-                            <button class="Header-burgerSelect Header-menuMobile textLink">
-                                <p>Services</p>
-
-                                <img class="Header-iconBurgerSelect" src="./assets/icons/iconArrowSelect.svg" alt="">
-                            </button>
-
-                            <div class="Header-wrapperBurgerMenuLinksSelect hidden">
-                                <a class="Header-burgerSelectLink" href="#bookkeeping">
-                                    <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                                
-                                    <p>Bookkeeping</p>
-                                </a>
-        
-                                <a class="Header-burgerSelectLink" href="#medicalBilling">
-                                    <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                                
-                                    <p>Medical Billing</p>
-                                </a>
-            
-                                <a class="Header-burgerSelectLink" href="#management">
-                                    <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                                
-                                    <p>AR Management</p>
-                                </a>
-            
-                                <a class="Header-burgerSelectLink" href="#management">
-                                    <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                                
-                                    <p>AP Management</p>
-                                </a>
-            
-                                <a class="Header-burgerSelectLink" href="#videoProduction">
-                                    <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                                
-                                    <p>Video Production</p>
-                                </a>
-            
-                                <a class="Header-burgerSelectLink" href="#graphicDesign">
-                                    <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                                
-                                    <p>Graphic Design</p>
-                                </a>
-            
-                                <a class="Header-burgerSelectLink" href="#customerService">
-                                    <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                                
-                                    <p>Customer Service</p>
-                                </a>
-            
-                                <a class="Header-burgerSelectLink" href="#eCommerceServices">
-                                    <img class="iconArrowText" src="./assets/icons/iconArrowText.svg" alt="">
-                                
-                                    <p>E-commerce Services</p>
-                                </a>
-                            </div>
-                        </div>
-                    
-                        <a class="Header-burgerLink textLink" href="#team">Team</a>
-                        <a class="Header-burgerLink textLink" href="#contacts">Contacts</a>
-                    </div>
-                </div>
-    
                 <div class="Header-containerBtns">
-                    <a class="Header-mainBtn primary textUppercase textBtn" href="#contacts">Let’s talk</a>
+                    <a class="Header-mainBtn primaryBtn whiteHover" href="#contacts">
+                        <p class="primaryBtnText textUppercase textBtn">Let’s talk</p>
+                    </a>
 
                     <button class="Header-burgerBtn">
                         <img class="Header-iconBurgerBtn" src="./assets/icons/iconBurger.svg" alt="">
@@ -194,50 +236,52 @@
             <div class="AboutUs-wrapper maxContainerSize">
                 <div class="AboutUs-containerDescription">
                     <div class="AboutUs-containerTitle">
-                        <h3 class="AboutUs-title h3 textUppercase upAnimationText">About Us</h3>
+                        <h3 class="AboutUs-title h3 textUppercase stdAnim upAnimText">About Us</h3>
 
-                        <a class="AboutUs-btnToServices secondary textUppercase textBtn" href="#bookkeeping">
-                            <p class="AboutUs-btnToServicesText">Explore Services</p>
+                        <a class="AboutUs-btnToServices secondaryBtn" href="#bookkeeping">
+                            <p class="AboutUs-btnToServicesText secondaryBtnText textUppercase textBtn">Explore Services</p>
 
-                            <img class="AboutUs-iconBtnToServices" src="./assets/icons/iconArrow.svg" alt="" />
+                            <svg class="AboutUs-iconBtnToServices" viewBox="0 0 57 33" fill="current" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28.7158 32.5572L0.43155 4.27295L4.19539 0.509107L28.7158 25.0295L53.2362 0.509107L57.0001 4.27295L28.7158 32.5572Z" />
+                            </svg>
                         </a>
                     </div>
 
                     <div class="AboutUs-containerCards">
                         <div class="AboutUs-containerCard">
-                            <h4 class="AboutUs-cardTitle h4 textUppercase upAnimationText">Meet your reliable outsourcing partner</h4>
+                            <h4 class="AboutUs-cardTitle h4 textUppercase stdAnim upAnimText">Meet your reliable outsourcing partner</h4>
 
-                            <p class="AboutUs-cardText textSmall upAnimationText">We specialize in outsourcing business solutions to meet your needs. With the use of modern technologies and creativity, we generate innovative strategies that make you stand out.</p>
+                            <p class="AboutUs-cardText textSmall stdAnim upAnimText">We specialize in outsourcing business solutions to meet your needs. With the use of modern technologies and creativity, we generate innovative strategies that make you stand out.</p>
                         </div>
 
                         <div class="AboutUs-containerCard">
-                            <h4 class="AboutUs-cardTitle h4 textUppercase upAnimationText">Creative solutions for your brand</h4>
+                            <h4 class="AboutUs-cardTitle h4 textUppercase stdAnim upAnimText">Creative solutions for your brand</h4>
 
-                            <p class="AboutUs-cardText textSmall upAnimationText">We offer graphic design and videography services to help you create engaging and visually appealing content for your business.</p>
+                            <p class="AboutUs-cardText textSmall stdAnim upAnimText">We offer graphic design and videography services to help you create engaging and visually appealing content for your business.</p>
                         </div>
 
                         <div class="AboutUs-containerCard">
-                            <h4 class="AboutUs-cardTitle h4 textUppercase upAnimationText">Our credo</h4>
+                            <h4 class="AboutUs-cardTitle h4 textUppercase stdAnim upAnimText">Our credo</h4>
 
-                            <p class="AboutUs-cardText textSmall upAnimationText">We believe that your business can succeed by delegating various tasks to teams of qualified specialists. We prioritize your requirements and enhance your business to its fullest potential.</p>
+                            <p class="AboutUs-cardText textSmall stdAnim upAnimText">We believe that your business can succeed by delegating various tasks to teams of qualified specialists. We prioritize your requirements and enhance your business to its fullest potential.</p>
                         </div>
 
                         <div class="AboutUs-containerCard">
-                            <h4 class="AboutUs-cardTitle h4 textUppercase upAnimationText">Business solutions with a personal touch</h4>
+                            <h4 class="AboutUs-cardTitle h4 textUppercase stdAnim upAnimText">Business solutions with a personal touch</h4>
 
-                            <p class="AboutUs-cardText textSmall upAnimationText">Each of our employees works closely with their specific clients to understand their unique needs and guarantee the success of their goals.</p>
+                            <p class="AboutUs-cardText textSmall stdAnim upAnimText">Each of our employees works closely with their specific clients to understand their unique needs and guarantee the success of their goals.</p>
                         </div>
 
                         <div class="AboutUs-containerCard">
-                            <h4 class="AboutUs-cardTitle h4 textUppercase upAnimationText">Outsourcing solutions that work</h4>
+                            <h4 class="AboutUs-cardTitle h4 textUppercase stdAnim upAnimText">Outsourcing solutions that work</h4>
 
-                            <p class="AboutUs-cardText textSmall upAnimationText">Our team of professionals is experienced in using modern financial tools and accounting software and integrating e-commerce processes into daily business operations.</p>
+                            <p class="AboutUs-cardText textSmall stdAnim upAnimText">Our team of professionals is experienced in using modern financial tools and accounting software and integrating e-commerce processes into daily business operations.</p>
                         </div>
 
                         <div class="AboutUs-containerCard">
-                            <h4 class="AboutUs-cardTitle h4 textUppercase upAnimationText">Helping your business grow</h4>
+                            <h4 class="AboutUs-cardTitle h4 textUppercase stdAnim upAnimText">Helping your business grow</h4>
 
-                            <p class="AboutUs-cardText textSmall upAnimationText">Our professional and experienced staff caters to entrepreneurs, mid-sized businesses, and any other organization looking to streamline their financial and creative operations.</p>
+                            <p class="AboutUs-cardText textSmall stdAnim upAnimText">Our professional and experienced staff caters to entrepreneurs, mid-sized businesses, and any other organization looking to streamline their financial and creative operations.</p>
                         </div>
                     </div>
                 </div>
@@ -255,9 +299,9 @@
                 <div class="Bookkeeping-containerInfo containerInfo innerPadding">
                     <div class="Bookkeeping-info innerWrapperInfo">
                         <div class="Bookkeeping-wrapperInfo mainText">
-                            <h2 class="Bookkeeping-title h2 textUppercase upAnimationText">Bookkeeping</h2>
+                            <h2 class="Bookkeeping-title h2 textUppercase stdAnim upAnimText">Bookkeeping</h2>
     
-                            <p class="Bookkeeping-text textLarge upAnimationText">Get certified bookkeeping assistance and understand your financial health with our experts</p>
+                            <p class="Bookkeeping-text textLarge stdAnim upAnimText">Get certified bookkeeping assistance and understand your financial health with our experts</p>
                         </div>
     
                         <div class="Bookkeeping-wrapperInfo secondaryText">
@@ -279,9 +323,9 @@
                 <div class="MedicalBilling-containerInfo containerInfo innerPadding borderRadiusFull">
                     <div class="MedicalBilling-info innerWrapperInfo">
                         <div class="MedicalBilling-wrapperInfo mainText">
-                            <h2 class="MedicalBilling-title h2 textUppercase upAnimationText">Medical Billing</h2>
+                            <h2 class="MedicalBilling-title h2 textUppercase stdAnim upAnimText">Medical Billing</h2>
     
-                            <p class="MedicalBilling-text textLarge upAnimationText">Optimize your medical billing and coding practices by outsourcing to our specialists and focus on your patients</p>
+                            <p class="MedicalBilling-text textLarge stdAnim upAnimText">Optimize your medical billing and coding practices by outsourcing to our specialists and focus on your patients</p>
                         </div>
     
                         <div class="MedicalBilling-wrapperInfo secondaryText">
@@ -310,13 +354,13 @@
                     <div class="Management-containerInfo containerInfo innerPadding borderRadiusFull">
                         <div class="Management-info innerWrapperInfo">
                             <div class="Management-weapperInfo mainText">
-                                <h2 class="Management-title h2 textUppercase upAnimationText">AR Management</h2>
+                                <h2 class="Management-title h2 textUppercase stdAnim upAnimText">AR Management</h2>
         
-                                <p class="Management-text textLarge upAnimationText">Optimize your business with our AR management services and improve cash flow</p>
+                                <p class="Management-text textLarge stdAnim upAnimText">Optimize your business with our AR management services and improve cash flow</p>
                             </div>
     
                             <div class="Management-weapperInfo secondaryText">
-                                <h2 class="Management-title h2 textUppercase upAnimationText">AR Management</h2>
+                                <h2 class="Management-title h2 textUppercase stdAnim upAnimText">AR Management</h2>
     
                                 <p class="Management-text textLarge">
                                     Are you tired of wasting time tracking Accounts Receivable?
@@ -330,13 +374,13 @@
                     <div class="Management-containerInfo containerInfo innerPadding borderRadiusFull">
                         <div class="Management-info innerWrapperInfo">
                             <div class="Management-weapperInfo mainText">
-                                <h2 class="Management-title h2 textUppercase upAnimationText">AP Management</h2>
+                                <h2 class="Management-title h2 textUppercase stdAnim upAnimText">AP Management</h2>
         
-                                <p class="Management-text textLarge upAnimationText">Manage AP better with our innovative solutions and take control of your finances</p>
+                                <p class="Management-text textLarge stdAnim upAnimText">Manage AP better with our innovative solutions and take control of your finances</p>
                             </div>
     
                             <div class="Management-weapperInfo secondaryText">
-                                <h2 class="Management-title h2 textUppercase upAnimationText">AP Management</h2>
+                                <h2 class="Management-title h2 textUppercase stdAnim upAnimText">AP Management</h2>
     
                                 <p class="Management-text textLarge">
                                     Don't let poor Accounts Payable management lead your business to fail — entrust it to the experts!
@@ -354,9 +398,9 @@
                 <div class="CustomerService-containerInfo containerInfo innerPadding borderRadiusFull">
                     <div class="CustomerService-info innerWrapperInfo">
                         <div class="CustomerService-wrapperInfo mainText">
-                            <h2 class="CustomerService-title h2 textUppercase upAnimationText">Customer Service</h2>
+                            <h2 class="CustomerService-title h2 textUppercase stdAnim upAnimText">Customer Service</h2>
                             
-                            <p class="CustomerService-text textLarge upAnimationText">Outperform your competitors with top-notch customer service that unlocks your digital potential</p>
+                            <p class="CustomerService-text textLarge stdAnim upAnimText">Outperform your competitors with top-notch customer service that unlocks your digital potential</p>
                         </div>
     
                         <div class="CustomerService-wrapperInfo secondaryText">
@@ -380,13 +424,15 @@
         <section class="VideoProduction-container blackTheme mobilePadding" id="videoProduction">
             <div class="VideoProduction-wrapper maxContainerSize borderRadiusFull innerPadding ">
                 <div class="VideoProduction-containerInfo containerInfo">
-                    <a class="GraphicDesign-linkToPortfolioPage primary textUppercase textBtn" href="./portfolio-video.html">see our work</a>
+                    <a class="VideoProduction-linkToPortfolioPage primaryBtn greenHover linkToPortfolioPage" href="./portfolio.html">
+                        <p class="primaryBtnText textUppercase textBtn">see our work</p>
+                    </a>
 
                     <div class="VideoProduction-info innerWrapperInfo">
                         <div class="VideoProduction-wrapperInfo mainText">
-                            <h2 class="VideoProduction-title h2 textUppercase upAnimationText">Video Production</h2>
+                            <h2 class="VideoProduction-title h2 textUppercase stdAnim upAnimText">Video Production</h2>
     
-                            <p class="VideoProduction-text textLarge upAnimationText">Take advantage of innovative video production services for marketing success</p>
+                            <p class="VideoProduction-text textLarge stdAnim upAnimText">Take advantage of innovative video production services for marketing success</p>
                         </div>
     
                         <div class="VideoProduction-wrapperInfo secondaryText">
@@ -413,13 +459,15 @@
                 </figure>
 
                 <div class="GraphicDesign-containerInfo containerInfo innerPadding borderRadiusFull">
-                    <a class="GraphicDesign-linkToPortfolioPage primary textUppercase textBtn" href="./portfolio-design.html">see our work</a>
+                    <a class="GraphicDesign-linkToPortfolioPage primaryBtn greenHover linkToPortfolioPage" href="./portfolio.html">
+                        <p class="primaryBtnText textUppercase textBtn">see our work</p>
+                    </a>
 
                     <div class="GraphicDesign-info innerWrapperInfo">
                         <div class="GraphicDesign-wrapperInfo mainText">
-                            <h2 class="GraphicDesign-title h2 textUppercase upAnimationText">Graphic Design</h2>
+                            <h2 class="GraphicDesign-title h2 textUppercase stdAnim upAnimText">Graphic Design</h2>
 
-                            <p class="GraphicDesign-text textLarge upAnimationText">Get a unique and modern design that makes you stand out from the competition</p>
+                            <p class="GraphicDesign-text textLarge stdAnim upAnimText">Get a unique and modern design that makes you stand out from the competition</p>
                         </div>
                         
                         <div class="GraphicDesign-wrapperInfo secondaryText">
@@ -439,9 +487,9 @@
         <section class="ECommerceServices-container blackTheme mobilePadding" id="eCommerceServices">
             <div class="ECommerceServices-wrapper innerPadding maxContainerSize borderRadiusFull">
                 <div class="ECommerceServices-containerMainInfo">
-                    <h2 class="ECommerceServices-mainTitle h2 textUppercase upAnimationText">E-commerce Services</h2>
+                    <h2 class="ECommerceServices-mainTitle h2 textUppercase stdAnim upAnimText">E-commerce Services</h2>
 
-                    <p class="ECommerceServices-mainText textLarge mainText upAnimationText">Take your e-commerce business to the next level with our experienced team's effective strategy and optimization for success</p>
+                    <p class="ECommerceServices-mainText textLarge mainText stdAnim upAnimText">Take your e-commerce business to the next level with our experienced team's effective strategy and optimization for success</p>
                     <p class="ECommerceServices-mainText textLarge secondaryText">
                         Looking to take your e-commerce business to the next level?
                         <br><br> Our experienced team can help you develop an effective strategy, create a stunning platform, and optimize it for success.
@@ -450,31 +498,31 @@
                 </div>
 
                 <div class="ECommerceServices-containerInfoCards">
-                    <div class="ECommerceServices-infoCard upAnimationText">
+                    <div class="ECommerceServices-infoCard stdAnim upAnimText">
                         <span class="ECommerceServices-infoCardNumber h5">01</span>
 
                         <p class="ECommerceServices-infoCardText textLarge">Private Label Product Research & Development</p>
                     </div>
 
-                    <div class="ECommerceServices-infoCard upAnimationText">
+                    <div class="ECommerceServices-infoCard stdAnim upAnimText">
                         <span class="ECommerceServices-infoCardNumber h5">02</span>
 
                         <p class="ECommerceServices-infoCardText textLarge">Amazon & Walmart Seller Central Account Management</p>
                     </div>
 
-                    <div class="ECommerceServices-infoCard upAnimationText">
+                    <div class="ECommerceServices-infoCard stdAnim upAnimText">
                         <span class="ECommerceServices-infoCardNumber h5">03</span>
 
                         <p class="ECommerceServices-infoCardText textLarge">Advanced Report Building (Excel, Google Sheets, Power BI)</p>
                     </div>
 
-                    <div class="ECommerceServices-infoCard upAnimationText">
+                    <div class="ECommerceServices-infoCard stdAnim upAnimText">
                         <span class="ECommerceServices-infoCardNumber h5">04</span>
 
                         <p class="ECommerceServices-infoCardText textLarge">E-commerce Virtual Assistance</p>
                     </div>
 
-                    <div class="ECommerceServices-infoCard upAnimationText">
+                    <div class="ECommerceServices-infoCard stdAnim upAnimText">
                         <span class="ECommerceServices-infoCardNumber h5">05</span>
 
                         <p class="ECommerceServices-infoCardText textLarge">Advertising Management (PPC, SEO, Copywriting)</p>
@@ -493,7 +541,7 @@
                     <div class="Team-containerInfoPerson">
                         <h2 class="Team-infoPersonName h2 textUppercase">Eugene</h2>
                     
-                        <p class="Team-infoPersonProfession textSmall">Executive Producer</p>
+                        <p class="Team-infoPersonProfession textSmall"> Creative Director / Producer</p>
                     </div>
                 </div>
 
@@ -547,31 +595,35 @@
             </div>
         </section>
 
-        <section class="Contacts-container maxContainerSize mobilePadding" id="contacts">
-            <h1 class="Contacts-title h1 downAnimationText">LET'S WORK <br> TOGETHER</h1>
+        <section class="Contacts-container mobilePadding" id="contacts">
+            <div class="Contacts-wrapper maxContainerSize downAnimText">
+                <h1 class="Contacts-title h1">LET'S WORK <br> TOGETHER</h1>
 
-            <div class="Contacts-containerInput">
-                <p class="Contacts-inputText textUppercase">Contact us today for the highest level of service at unbeatable rates</p>
+                <div class="Contacts-containerInput">
+                    <p class="Contacts-inputText textUppercase">Contact us today for the highest level of service at unbeatable rates</p>
 
-                <div class="Contacts-wrapperInput">
-                    <input class="Contacts-input textSmall" type="email" placeholder="Email address" />
+                    <div class="Contacts-wrapperInput">
+                        <input class="Contacts-input textSmall" type="email" placeholder="Email address" />
 
-                    <button class="Contacts-btnSendEmeil">
-                        <img class="Contacts-iconArrowFull" src="./assets/icons/iconArrowFull.svg" alt="">
-                    </button>
+                        <button class="Contacts-btnSendEmail">
+                            <img class="Contacts-iconArrowFull" src="./assets/icons/iconArrowFull.svg" alt="">
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
 
         <footer class="Footer-container blackTheme borderRadiusUp mobilePadding" id="footer">
             <div class="Footer-wrapper maxContainerSize">
-                <div class="Footer-containerEmeilLink">
-                    <h3 class="Footer-emeilText h3 textUppercase">GET IN TOUCH</h3>
+                <div class="Footer-containerEmailLink">
+                    <h3 class="Footer-emailText h3 textUppercase">GET IN TOUCH</h3>
 
-                    <h2 class="Footer-emeil h2 textUppercase">
-                        <img class="Footer-iconTextEmeil" src="./assets/icons/iconArrowText.svg" alt="">
+                    <h2 class="Footer-email h2 textUppercase containerHoverIconAnim">
+                        <svg class="Footer-iconTextEmail hoverGreenIconAnim" viewBox="0 0 33 58" fill="curremt" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M33.001 29.2729L4.7167 57.5572L0.95286 53.7934L25.4733 29.2729L0.95286 4.7525L4.7167 0.988661L33.001 29.2729Z" />
+                        </svg>
                         
-                        <p class="Footer-textEmeil">info@gmyconsulting.com</p>
+                        <p class="Footer-textEmail">info@gmyconsulting.com</p>
                     </h2>
                 </div>
 
@@ -580,12 +632,16 @@
                         <img class="Footer-logoIcon" src="./assets/icons/logoWhite.svg" alt="logo" />
                     </div>
           
-                    <a class="Footer-btnSocial secondary textUppercase textBtn" href="https://www.linkedin.com/company/gmy-consulting-group/" target="_blank">LinkedIn</a>
+                    <a class="Footer-btnSocial secondaryBtn" href="https://www.linkedin.com/company/gmy-consulting-group/" target="_blank">
+                        <p class="secondaryBtnText textUppercase textBtn">LinkedIn</p>
+                    </a>
 
-                    <a class="Footer-btnBackToUp secondary textUppercase textBtn" href="#main">
-                        <p class="Footer-btnBackToUpText">back to top</p>
+                    <a class="Footer-btnBackToUp secondaryBtn" href="#main">
+                        <p class="Footer-btnBackToUpText secondaryBtnText textUppercase textBtn">back to top</p>
 
-                        <img class="Footer-iconBtnBackToUp" src="./assets/icons/iconArrow.svg" alt="" />
+                        <svg class="Footer-iconBtnBackToUp" viewBox="0 0 58 34" fill="current" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28.7178 0.988655L57.002 29.2729L53.2382 33.0368L28.7178 8.51634L4.19734 33.0368L0.4335 29.2729L28.7178 0.988655Z" />
+                        </svg>
                     </a>
                 </div>
 

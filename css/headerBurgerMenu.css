@@ -1,0 +1,69 @@
+.HeaderBurgerMenu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 40px 40px 100px;
+
+    background: var(--mainBlack);
+
+    overflow-y: scroll;
+    z-index: 99;
+}
+
+.HeaderBurgerMenu-containerHeader {
+    display: flex;
+    justify-content: space-between;
+
+    height: 43px;
+}
+
+.HeaderBurgerMenu-iconLogo {
+    width: 87px;
+}
+
+.HeaderBurgerMenu-containerLinks {
+    margin: 32px 0 0;
+}
+
+.HeaderBurgerMenu-link, .HeaderBurgerMenu-selectLink, .HeaderBurgerMenu-select {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    font-size: 20px;
+    line-height: 155%;
+    color: var(--mainWhite);
+}
+
+.HeaderBurgerMenu-link {
+    margin: 16px 0 0;
+}
+
+.HeaderBurgerMenu-select {
+    justify-content: space-between;
+}
+
+.HeaderBurgerMenu-iconSelect {
+    width: 15px;
+    
+    fill: white;
+
+    transform: rotate(0deg);
+}
+
+.HeaderBurgerMenu-iconSelect.active {
+    transform: rotate(180deg);
+}
+
+.HeaderBurgerMenu-containerLinksSelect {
+    margin: 16px 0 0;
+}
+
+.HeaderBurgerMenu-selectLink {
+    margin: 20px 0 0;
+}

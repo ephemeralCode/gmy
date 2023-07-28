@@ -40,12 +40,13 @@
 }
 
 .AboutUs-iconBtnToServices {
-    margin: 0 0 3px 10px;
+    width: 15px;
 
-    width: 25px;
-    height: 25px;
+    margin: 0 0 0 15px;
 
-    transform: rotate(180deg);
+    fill: var(--mainGreen);
+
+    z-index: 5;
 }
 
 .AboutUs-containerCards {
@@ -162,7 +163,9 @@
     }
 
     .AboutUs-iconBtnToServices {
-        margin: 0;
+        width: 18px;
+
+        margin: 2px 0 0;
     }
 
     .AboutUs-containerCards {

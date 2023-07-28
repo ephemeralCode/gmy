@@ -1,0 +1,25 @@
+/* general */
+@import 'atoms.css';
+@import 'general.css';
+
+/* components */
+@import 'header.css';
+@import 'main.css';
+@import 'bookkeeping.css';
+@import 'aboutUs.css';
+@import 'medicalBilling.css';
+@import 'management.css';
+@import 'customerService.css';
+@import 'videoProduction.css';
+@import 'graphicDesign.css';
+@import 'eCommerceServices.css';
+@import 'team.css';
+@import 'contacts.css';
+@import 'footer.css';
+
+@import 'curtain.css';
+@import 'headerMenu.css';
+@import 'headerBurgerMenu.css';
+
+/* fonts */
+@import 'fonts.css';

@@ -1,3 +1,21 @@
+.PortfolioVideoProduction-wrapper {
+    position: relative;
+
+    height: 804px;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.PortfolioVideoProduction-iconPlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
 .PortfolioVideoProduction-previewVideo {
     position: absolute;
     top: 0;
@@ -12,15 +30,9 @@
     z-index: 2;
 }
 
-.VideoProduction-wrapper.PortfolioVideoProduction {
-    height: 804px;
-
-    cursor: pointer;
-}
-
 @media only screen and (max-width: 1440px) {
 
-    .VideoProduction-wrapper.PortfolioVideoProduction {
+    .PortfolioVideoProduction-wrapper {
         height: 664px;
     }
 
@@ -31,7 +43,7 @@
 
 @media only screen and (max-width: 768px) {
 
-    .VideoProduction-wrapper.PortfolioVideoProduction {
+    .PortfolioVideoProduction-wrapper {
         height: 457px;
     }
 
@@ -42,7 +54,7 @@
 
 @media only screen and (max-width: 550px) {
 
-    .VideoProduction-wrapper.PortfolioVideoProduction {
+    .PortfolioVideoProduction-wrapper {
         height: 212px;
     }
 
@@ -50,7 +62,7 @@
         object-position: right center;
     }
 
-    .VideoProduction-wrapper.PortfolioVideoProduction .VideoProduction-iconPlay {
+    .PortfolioVideoProduction-wrapper .VideoProduction-iconPlay {
         top: 50%;
     }
 }

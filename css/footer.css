@@ -1,18 +1,3 @@
-/* footer::after {
-    position: fixed;
-    content: "";
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 1440px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-} */
-
 .Footer-container {
     background: var(--mainBlack);
 }
@@ -23,33 +8,35 @@
     padding: 100px 0 0;
 }
 
-.Footer-containerEmeilLink {
+.Footer-containerEmailLink {
     display: flex;
     flex-direction: column;
 
     text-align: center;
 }
 
-.Footer-emeil {
+.Footer-email {
     display: flex;
     justify-content: center;
 
     margin: 8px 0 0;
 }
 
-.Footer-emeil:hover {
-    color: var(--greenText);
+.Footer-email:hover {
+    color: var(--mainGreen);
 }
 
-.Footer-iconTextEmeil {
+.Footer-iconTextEmail {
     width: 18px;
+
+    fill: var(--mainWhite);
 }
 
-.Footer-textEmeil {
+.Footer-textEmail {
     margin: 0 0 0 20px;
 }
 
-.Footer-emeilText, .Footer-emeil {
+.Footer-emailText, .Footer-email {
     color: var(--mainWhite);
 }
 
@@ -93,10 +80,13 @@
 }
 
 .Footer-iconBtnBackToUp {
+    width: 15px;
+
     margin: 0 0 0 10px;
 
-    width: 25px;
-    height: 25px;
+    fill: var(--mainGreen);
+
+    z-index: 5;
 }
 
 .Footer-containerCopyright {
@@ -113,7 +103,7 @@
 
 @media only screen and (max-width: 1440px) {
 
-    .Footer-emeilText {
+    .Footer-emailText {
         font-size: 29px;
     }
 
@@ -136,11 +126,11 @@
         padding: 60px 0 0;
     }
 
-    .Footer-emeil {
+    .Footer-email {
         font-size: 30px;
     }
 
-    .Footer-iconTextEmeil {
+    .Footer-iconTextEmail {
         width: 10px;
     }
 
@@ -155,12 +145,12 @@
         padding: 32px 0 0;
     }
 
-    .Footer-emeilText {
+    .Footer-emailText {
         font-size: 16px;
         line-height: 18px;
     }
 
-    .Footer-emeil {
+    .Footer-email {
         font-size: 20px;
     }
 
@@ -185,6 +175,8 @@
     .Footer-btnBackToUp {
         width: 40px;
         height: 40px;
+
+        padding: 0;
     }
 
     .Footer-btnBackToUpText {
@@ -192,7 +184,9 @@
     }
 
     .Footer-iconBtnBackToUp {
-        margin: 0;
+        width: 18px;
+
+        margin: 0 0 2px;
     }
 
     .Footer-containerCopyright {

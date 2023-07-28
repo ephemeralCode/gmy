@@ -41,7 +41,7 @@
     border-bottom: 1px solid #333333;
 }
 
-.Contacts-btnSendEmeil {
+.Contacts-btnSendEmail {
     position: absolute;
     top: -10px;
     right: 0;
@@ -69,11 +69,9 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
 
-    .Contacts-container {
-        margin: 60px 0;
-
+    .Contacts-wrapper {
         flex-direction: column;
     }
 
@@ -86,19 +84,44 @@
     .Contacts-wrapperInput {
         margin: 40px 0 0;
     }
+}
 
+@media only screen and (max-width: 768px) {
+
+    .Contacts-container {
+        margin: 60px 0;
+    }
 }
 
 @media only screen and (max-width: 550px) {
 
     .Contacts-container {
         margin: 32px 0;
-
-        flex-direction: column;
     }
 
     .Contacts-inputText {
         font-size: 16px;
         line-height: 18px;
+    }
+
+    .Contacts-containerInput {
+        margin: 32px 0 0;
+    }
+
+    .Contacts-wrapperInput {
+        margin: 16px 0 0;
+    }
+
+    .Contacts-input {
+        height: auto;
+
+        padding: 4px 0 6px 0;
+
+        font-size: 14px;
+    }
+
+    .Contacts-iconArrowFull {
+        width: 32px;
+        height: 44px;
     }
 }

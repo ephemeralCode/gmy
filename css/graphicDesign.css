@@ -23,28 +23,12 @@
     background: var(--mainWhite);
 }
 
+.GraphicDesign-linkToPortfolioPage {
+    max-width: 220px;
+}
+
 .GraphicDesign-info {
     position: relative;
-}
-
-.GraphicDesign-linkToPortfolioPage {
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    max-width: 220px;
-    width: 100%;
-    height: 62px;
-
-    z-index: 10;
-}
-
-.GraphicDesign-linkToPortfolioPage:hover {
-    background: var(--greenText);
-
-    border: 1px solid var(--greenText);
 }
 
 .GraphicDesign-title {
