@@ -4,8 +4,8 @@ const selectedTypePorftolio = localStorage.getItem('typePortfolio')
 const portfolioGraphicDesignContainer = document.querySelector('.PortfolioGraphicDesign-container')
 const portfolioVideoProductionContainer = document.querySelector('.PortfolioVideoProduction-container')
 
-const btnTypeGraphicDesignPortfolio = document.querySelectorAll('.PortfolioHeader-containerBtnTypeGraphicDesignPortfolio')
-const btnTypeVideoProductionPortfolio = document.querySelectorAll('.PortfolioHeader-containerBtnTypeVideoProductionPortfolio')
+const btnTypeGraphicDesignPortfolio = document.querySelectorAll('.PortfolioTypeSwitch-containerBtnGraphicDesignPortfolio')
+const btnTypeVideoProductionPortfolio = document.querySelectorAll('.PortfolioTypeSwitch-containerBtnVideoProductionPortfolio')
 const arrayBtnGraphicDesign = [...btnTypeGraphicDesignPortfolio]
 const arrayBtnVideoProduction = [...btnTypeVideoProductionPortfolio]
 

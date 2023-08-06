@@ -33,7 +33,7 @@
 }
 
 .Footer-textEmail {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 15px;
 }
 
 .Footer-emailText, .Footer-email {
@@ -194,6 +194,6 @@
     }
 
     .Footer-copyrightText {
-        font-size: 9px;
+        font-size: 10px;
     }
 }

@@ -27,10 +27,9 @@ function emeilTest() {
     )
 }
 
-// contactsBtnSendEmeil.addEventListener('click', emeilTest)
+contactsBtnSendEmeil.addEventListener('click', emeilTest)
 
 // animation icon
-
 const contactsIconArrowFull = document.querySelector('.Contacts-iconArrowFull')
 
 contactsIconArrowFull.addEventListener('click', () => {

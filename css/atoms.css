@@ -72,6 +72,10 @@
 
 /* btns */
 
+button {
+    font-family: 'UrbanistRegular';
+}
+
 .primaryBtn {
     position: relative;
 
@@ -309,7 +313,7 @@
     display: none;
 }
 
-/**/
+
 
 .containerInfo:hover .innerWrapperInfo .mainText {
     transition: all .3s ease-in-out;

@@ -1,4 +1,4 @@
-.tabs {
+.PortfolioTypeSwitch-container {
     position: relative;
 
     display: flex;
@@ -8,14 +8,14 @@
     background: transparent;
 }
 
-.PortfolioHeader-containerBtnTypeGraphicDesignPortfolio, 
-.PortfolioHeader-containerBtnTypeVideoProductionPortfolio {
+.PortfolioTypeSwitch-containerBtnGraphicDesignPortfolio, 
+.PortfolioTypeSwitch-containerBtnVideoProductionPortfolio {
     width: 100%;
 
     z-index: 2;
 }
 
-.tab {
+.PortfolioTypeSwitch-text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,26 +25,23 @@
 
     border-radius: 55px;
 
+    font-size: 20px;
     color: var(--mainWhite);
 
     cursor: pointer;
     transition: color .25s ease-in 0.15s;
 }
 
-.PortfolioHeader-containerBtnTypeGraphicDesignPortfolio.active .tab, 
-.PortfolioHeader-containerBtnTypeVideoProductionPortfolio.active .tab {
+.PortfolioTypeSwitch-containerBtnGraphicDesignPortfolio.active .PortfolioTypeSwitch-text, 
+.PortfolioTypeSwitch-containerBtnVideoProductionPortfolio.active .PortfolioTypeSwitch-text {
     color: #1B1B1B;
 }
 
-.glider {
-    transform: translateX(0);
-}
-
-.PortfolioHeader-containerBtnTypeVideoProductionPortfolio.active ~ .glider {
+.PortfolioTypeSwitch-containerBtnVideoProductionPortfolio.active ~ .PortfolioTypeSwitch-glider {
     transform: translateX(100%);
 }
 
-.glider {
+.PortfolioTypeSwitch-glider {
     position: absolute;
 
     display: flex;
@@ -54,7 +51,24 @@
     border-radius: 50px;
     background-color: white;
 
+    transition: .5s ease-out;
+    transform: translateX(0);
     z-index: 1;
+}
 
-    transition: 0.5s ease-out;
+@media only screen and (max-width: 550px) {
+
+    .PortfolioMain-container{
+        display: block;
+
+        padding: 44px 20px 0;
+    }
+
+    .PortfolioMain-wrapper {
+        height: 38px;
+    }
+
+    .PortfolioTypeSwitch-text {
+        font-size: 13px;
+    }
 }

@@ -28,38 +28,6 @@
     border-radius: 55px;
 }
 
-.PortfolioMain-btnGraphicDesign, .PortfolioMain-btnVideoProduction {
-    font-size: 20px;
-}
-
-/* .PortfolioMain-btnGraphicDesign {
-    width: 50%;
-
-    border-radius: 55px;
-
-    color: var(--mainWhite);
-} */
-
-/* .PortfolioMain-btnVideoProduction {
-    width: 50%;
-
-    border-radius: 55px;
-
-    color: var(--mainWhite);
-} */
-
-/* .PortfolioMain-btnGraphicDesign.active {
-    background: #FFFFFF;
-
-    color: var(--mainBlack);
-}
-
-.PortfolioMain-btnVideoProduction.active {
-    background: #FFFFFF;
-
-    color: var(--mainBlack);
-} */
-
 @media only screen and (max-width: 768px) {
 
     .PortfolioMain-container{
@@ -84,13 +52,5 @@
 
     .PortfolioMain-wrapper {
         height: 38px;
-    }
-
-    /* .PortfolioMain-containerToggleView {
-        height: 38px;
-    } */
-
-    .PortfolioMain-btnGraphicDesign, .PortfolioMain-btnVideoProduction {
-        font-size: 13px;
     }
 }
