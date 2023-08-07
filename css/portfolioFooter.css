@@ -13,7 +13,7 @@
 .PortfolioFooter-containerBtnBackToUp {
     position: fixed;
     right: 20px;
-    bottom: 119px;
+    bottom: 145px;
 
     z-index: 99;
 }
@@ -42,7 +42,7 @@
 @media only screen and (max-width: 550px) {
 
     .PortfolioFooter-containerBtnBackToUp {
-        bottom: 97px;
+        bottom: 117px;
     }
 
     .PortfolioFooter-btnBackToUp {
