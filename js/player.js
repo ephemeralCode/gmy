@@ -1,6 +1,5 @@
 
-const playBtn = document.querySelector('.VideoProduction-iconPlay')
-const textContainer = document.querySelector('.VideoProduction-containerInfo')
+const playBtn = document.querySelector('.PortfolioVideoProduction-iconPlay')
 const wrapper = document.querySelector('.PortfolioVideoProduction-wrapper')
 const portfolioPreviewVideo = document.querySelector('.PortfolioVideoProduction-previewVideo')
 
@@ -39,13 +38,6 @@ function handlePlayPause(playerStatus){
         
         portfolioPreviewVideo.style.display = 'none'
 
-        if (textContainer) {
-            textContainer.style.display = 'none'
-        }
-    } else {
-        if (textContainer) {
-            textContainer.style.display = 'flex'
-        }
     }
 }
 
