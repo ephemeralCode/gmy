@@ -1,6 +1,3 @@
-.ECommerceServices-container {
-}
-
 .ECommerceServices-wrapper {
     width: 100%;
 
@@ -16,13 +13,6 @@
 
     max-width: 627px;
     width: 100%;
-}
-
-.ECommerceServices-mainTitle {
-}
-
-.ECommerceServices-mainText {
-
 }
 
 .ECommerceServices-mainText.secondaryText {

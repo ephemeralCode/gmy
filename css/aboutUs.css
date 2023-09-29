@@ -7,9 +7,6 @@
     z-index: 5;
 }
 
-.AboutUs-wrapper{
-}
-
 .AboutUs-containerDescription {
     display: flex;
     justify-content: space-between;
@@ -79,6 +76,7 @@
     color: var(--grayText);
 }
 
+/* adaptive */
 @media only screen and (max-width: 1440px) {
 
     .AboutUs-container {

@@ -1,6 +1,3 @@
-.VideoProduction-container {
-}
-
 .VideoProduction-wrapper {
     position: relative;
 
@@ -50,9 +47,6 @@
 
 .VideoProduction-linkToPortfolioPage {
     max-width: 220px;   
-}
-
-.VideoProduction-title {
 }
 
 .VideoProduction-text {

@@ -1,6 +1,3 @@
-.GraphicDesign-container {
-}
-
 .GraphicDesign-wrapper {
     height: 626px;
 }
@@ -29,9 +26,6 @@
 
 .GraphicDesign-info {
     position: relative;
-}
-
-.GraphicDesign-title {
 }
 
 .GraphicDesign-text {

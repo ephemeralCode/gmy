@@ -14,7 +14,7 @@
 
     /* breakpoints */
     /*  
-    --Desctop: 1920px;
+    --Desktop: 1920px;
     --Laptop: 1440px;
     --Tablet: 768px;
     --Mobile: 550px; 
@@ -152,7 +152,7 @@ button {
     border: none;
 }
 
-
+/* - */
 
 .secondaryBtn {
     position: relative;
@@ -313,7 +313,7 @@ button {
     display: none;
 }
 
-
+/* - */
 
 .containerInfo:hover .innerWrapperInfo .mainText {
     transition: all .3s ease-in-out;

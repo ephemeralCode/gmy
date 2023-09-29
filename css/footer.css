@@ -101,6 +101,7 @@
     color: #828282;
 }
 
+/* adaptive */
 @media only screen and (max-width: 1440px) {
 
     .Footer-emailText {

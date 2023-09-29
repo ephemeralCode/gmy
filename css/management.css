@@ -1,6 +1,3 @@
-.Management-container {
-}
-
 .Management-wrapper {
     height: 1188px;
 }
@@ -40,9 +37,6 @@
 
 .Management-info {
     position: relative;
-}
-
-.Management-title {
 }
 
 .Management-text {

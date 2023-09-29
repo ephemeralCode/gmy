@@ -1,6 +1,3 @@
-.CustomerService-container {
-}
-
 .CustomerService-wrapper {
     height: 594px;
 }
@@ -13,9 +10,6 @@
 
 .CustomerService-info {
     position: relative;
-}
-
-.CustomerService-title {
 }
 
 .CustomerService-text {

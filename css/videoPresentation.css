@@ -7,11 +7,6 @@
     z-index: 99;
 }
 
-/* TODO hidden */
-.VideoPresentation-container.hidden {
-
-}
-
 .VideoPresentation-background {
     position: absolute;
 

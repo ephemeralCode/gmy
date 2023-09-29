@@ -90,9 +90,6 @@
     opacity: 1;
 }
 
-.Team-infoPersonName {
-}
-
 .Team-infoPersonProfession {
     margin: 12px 0 0;
 }
@@ -196,7 +193,7 @@
         grid-area: photo5;
     }
 
-    /**/
+    /* - */
 
     .Team-imagePerson {
         height: 100%;
@@ -258,7 +255,7 @@
         );
     }
 
-    /**/
+    /* - */
 
     .Team-containerInfoPerson {
         padding: 28px;
@@ -303,7 +300,7 @@
         height: 176px;
     }
 
-    /**/
+    /* - */
 
     .Team-containerPerson:nth-child(1) .Team-imagePerson {
         height: 260px;
